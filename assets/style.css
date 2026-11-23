@@ -279,3 +279,171 @@ button:focus-visible {
     font-size: 0.75rem;
   }
 }
+/* ===== Fase B: páginas de servicio ===== */
+
+.menu a[aria-current="page"] {
+  color: var(--color-acento);
+}
+
+/* Migas de pan */
+.migas {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.25rem 2rem 0;
+  font-size: 0.9rem;
+  color: var(--color-suave);
+}
+
+.migas ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.migas li + li::before {
+  content: "/";
+  margin-inline-end: 0.5rem;
+}
+
+.migas a:hover {
+  color: var(--color-acento);
+}
+
+/* Introducción de la página de servicio */
+.servicio-intro {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem 1.5rem;
+}
+
+.servicio-intro h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.servicio-intro p {
+  font-size: 1.2rem;
+  color: var(--color-suave);
+}
+
+/* Bloques de contenido */
+.servicio-bloque {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+}
+
+.servicio-bloque h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.servicio-bloque p {
+  color: var(--color-suave);
+  margin-bottom: 1rem;
+}
+
+/* Lista de lo que incluye */
+.lista-incluye {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.lista-incluye li {
+  position: relative;
+  padding-inline-start: 1.75rem;
+}
+
+.lista-incluye li::before {
+  content: "✓";
+  position: absolute;
+  inset-inline-start: 0;
+  color: var(--color-acento);
+  font-weight: 700;
+}
+
+/* Pasos numerados */
+.pasos {
+  list-style: none;
+  counter-reset: paso;
+  display: grid;
+  gap: 1rem;
+}
+
+.pasos li {
+  counter-increment: paso;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background-color: var(--color-fondo-2);
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+}
+
+.pasos li::before {
+  content: counter(paso);
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--color-acento);
+  color: var(--color-fondo);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Llamada a la acción */
+.llamada {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2.5rem 2rem;
+  background-color: var(--color-fondo-2);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.llamada h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.llamada p {
+  color: var(--color-suave);
+  margin: 0 auto 1.5rem;
+}
+
+/* Tarjetas que son enlaces (índice y servicios relacionados) */
+a.tarjeta {
+  display: block;
+  border: 1px solid transparent;
+}
+
+a.tarjeta:hover {
+  border-color: var(--color-acento);
+}
+
+/* Aviso o nota aclaratoria */
+.aviso {
+  font-size: 0.9rem;
+  color: var(--color-suave);
+  border-inline-start: 3px solid var(--color-acento);
+  padding-inline-start: 1rem;
+}
+
+@media (max-width: 480px) {
+  .migas,
+  .servicio-intro,
+  .servicio-bloque {
+    padding-inline: 1.25rem;
+  }
+
+  .llamada {
+    margin-inline: 1.25rem;
+    padding: 2rem 1.25rem;
+  }
+}
