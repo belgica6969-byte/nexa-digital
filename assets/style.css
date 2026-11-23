@@ -447,3 +447,7 @@ a.tarjeta:hover {
     padding: 2rem 1.25rem;
   }
 }
+/* Sección actual en el menú */
+.menu a[aria-current="true"] {
+  color: var(--color-acento);
+}
