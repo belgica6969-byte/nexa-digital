@@ -125,3 +125,28 @@ a {
   background-color: var(--color-fondo-2);
   color: var(--color-suave);
 }
+/* Selector de idioma */
+.idiomas {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.idiomas a {
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--color-suave);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-suave);
+}
+
+.idiomas a:hover {
+  border-color: var(--color-acento);
+  color: var(--color-acento);
+}
+
+.idiomas a.activo {
+  background-color: var(--color-acento);
+  border-color: var(--color-acento);
+  color: var(--color-fondo);
+}
