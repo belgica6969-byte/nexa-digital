@@ -6,14 +6,20 @@
   <title>Nexa Digital — وكالة مواقع الويب والتواصل الاجتماعي</title>
   <meta name="description" content="تقوم Nexa Digital بإنشاء موقعك الإلكتروني وإدارة حضورك على وسائل التواصل الاجتماعي.">
   <link rel="stylesheet" href="../assets/style.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
 </head>
 <body>
 
   <header class="cabecera">
-    <a href="index.html" class="logo">Nexa Digital</a>
-    <nav class="menu">
-      <a href="#services">خدماتنا</a>
-      <a href="#contact">اتصل بنا</a>
+    <a href="index.html" class="logo">
+      <img src="../assets/img/logo.svg" alt="" width="36" height="36">
+      <span>Nexa Digital</span>
+    </a>
+    <nav class="menu" id="menu-principal" aria-label="التنقل الرئيسي">
+      <a href="services/index.html">خدماتنا</a>
+      <a href="portfolio/index.html">أعمالنا</a>
+      <a href="contact/index.html">اتصل بنا</a>
+      <a href="contact/index.html" class="boton boton-cabecera">اطلب عرض سعر</a>
     </nav>
     <div class="idiomas" aria-label="اللغة">
       <a href="../fr/index.html" lang="fr">FR</a>
@@ -21,6 +27,7 @@
       <a href="../en/index.html" lang="en">EN</a>
       <a href="../ar/index.html" lang="ar" class="activo" aria-current="page">AR</a>
     </div>
+    <button class="menu-boton" type="button" aria-label="فتح القائمة" data-abrir="فتح القائمة" data-cerrar="إغلاق القائمة" aria-expanded="false" aria-controls="menu-principal">&#9776;</button>
   </header>
 
   <main>
@@ -53,5 +60,6 @@
     <p>© 2026 Nexa Digital. جميع الحقوق محفوظة.</p>
   </footer>
 
+  <script src="../assets/js/menu.js" defer></script>
 </body>
 </html>

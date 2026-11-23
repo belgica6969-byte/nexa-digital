@@ -6,14 +6,20 @@
   <title>Nexa Digital — Web and social media agency</title>
   <meta name="description" content="Nexa Digital builds your website and manages your social media presence.">
   <link rel="stylesheet" href="../assets/style.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
 </head>
 <body>
 
   <header class="cabecera">
-    <a href="index.html" class="logo">Nexa Digital</a>
-    <nav class="menu">
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
+    <a href="index.html" class="logo">
+      <img src="../assets/img/logo.svg" alt="" width="36" height="36">
+      <span>Nexa Digital</span>
+    </a>
+    <nav class="menu" id="menu-principal" aria-label="Main navigation">
+      <a href="services/index.html">Services</a>
+      <a href="portfolio/index.html">Portfolio</a>
+      <a href="contact/index.html">Contact</a>
+      <a href="contact/index.html" class="boton boton-cabecera">Request a quote</a>
     </nav>
     <div class="idiomas" aria-label="Language">
       <a href="../fr/index.html" lang="fr">FR</a>
@@ -21,6 +27,7 @@
       <a href="../en/index.html" lang="en" class="activo" aria-current="page">EN</a>
       <a href="../ar/index.html" lang="ar">AR</a>
     </div>
+    <button class="menu-boton" type="button" aria-label="Open menu" data-abrir="Open menu" data-cerrar="Close menu" aria-expanded="false" aria-controls="menu-principal">&#9776;</button>
   </header>
 
   <main>
@@ -53,5 +60,6 @@
     <p>© 2026 Nexa Digital. All rights reserved.</p>
   </footer>
 
+  <script src="../assets/js/menu.js" defer></script>
 </body>
 </html>
